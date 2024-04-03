@@ -1,4 +1,4 @@
-import { sql } from "../../infrastructure/db";
+import { sql } from "../../../infrastructure/db";
 
 export async function createUserInRepository({ name, birthday }) {
   const users = await sql`

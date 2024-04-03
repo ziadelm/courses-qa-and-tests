@@ -1,7 +1,7 @@
 import { HttpBadRequest, HttpForbidden } from "@httpx/exception";
 import { z } from "zod";
 import { createUserInRepository } from "./user.repository";
-import { calculateAge } from "../../shared/utils";
+import { calculateAge } from "../../../shared/utils";
 
 export const MAX_USER_AGE = 18;
 
