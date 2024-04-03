@@ -1,6 +1,7 @@
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,
-  name VARCHAR(100)
+  name VARCHAR(100),
+  birthday TIMESTAMP
 );
 
 CREATE TABLE accounts (
@@ -16,7 +17,7 @@ CREATE TABLE transfers (
   amount FLOAT
 );
 
-INSERT INTO users (name)
+INSERT INTO users (name, birthday)
 VALUES
-  ('Valentin M'),
-  ('Arthur R')
+  ('Valentin M', 'Wed Apr 03 2024 15:53:47'),
+  ('Arthur R', 'Wed Apr 03 2024 15:53:47')
